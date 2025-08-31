@@ -33,6 +33,7 @@ module.exports = class TvOverlayDriver extends Homey.Driver {
         devices = [
           {
             name: resJson.result.settings.deviceName,
+            data: { id: resJson.result.status.id },
             settings: {
               ip: data.ipAddress,
               port: data.port,

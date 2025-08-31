@@ -25,18 +25,39 @@
     "xlarge": "/assets/images/xlarge.png"
   },
   "author": {
-    "name": "Stèphan Eizinga (MonkeySoft)",
+    "name": "Stèphan Eizinga",
     "email": "stephan@monkeysoft.nl"
   },
+  "contributors": {
+    "developers": [
+      {
+        "name": "Stèphan Eizinga",
+        "email": "stephan@monkeysoft.nl"
+      }
+    ]
+  },
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "steffjenl"
+      }
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/steffjenl/com-gugutab-tvoverlay/issues"
+  },
+  "support": "https://monkeysoft.nl/homey-integrations-support/",
   "flow": {
     "actions": [
       {
         "id": "send_device_notification",
         "title": {
-          "en": "Send notfication to AndroidTV"
+          "en": "Send notfication to AndroidTV",
+          "nl": "Verstuur notificatie naar AndroidTV"
         },
         "titleFormatted": {
-          "en": "Send notfication to AndroidTV [[message]] [[title]] [[corner]] [[seconds]]"
+          "en": "Send notfication to AndroidTV [[message]] [[title]] [[corner]] [[seconds]]",
+          "nl": "Verstuur notificatie naar AndroidTV [[message]] [[title]] [[corner]] [[seconds]]"
         },
         "args": [
           {
@@ -111,12 +132,124 @@
         ]
       },
       {
-        "id": "send_device_notification_imageurl_all",
+        "id": "send_device_notification_image_all",
         "title": {
-          "en": "Send notfication to AndroidTV"
+          "en": "Send notification with image to AndroidTV",
+          "nl": "Verstuur notificatie met afbeelding naar AndroidTV"
         },
         "titleFormatted": {
-          "en": "Send notfication to AndroidTV [[message]] [[title]] [[color]] [[image]] [[smallIcon]] [[largeIcon]] [[corner]] [[seconds]]"
+          "en": "Send notification with image to AndroidTV [[message]] [[title]] [[color]] [[droptoken]] [[smallIcon]] [[largeIcon]] [[corner]] [[seconds]]",
+          "nl": "Verstuur notificatie met afbeelding naar AndroidTV [[message]] [[title]] [[droptoken]] [[color]] [[smallIcon]] [[largeIcon]] [[corner]] [[seconds]]"
+        },
+        "droptoken": "image",
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=tvoverlay"
+          },
+          {
+            "type": "text",
+            "name": "message",
+            "title": {
+              "en": "Message"
+            },
+            "placeholder": {
+              "en": "Hello!"
+            }
+          },
+          {
+            "type": "text",
+            "name": "title",
+            "title": {
+              "en": "Title"
+            },
+            "placeholder": {
+              "en": "How are you?"
+            }
+          },
+          {
+            "type": "color",
+            "name": "color",
+            "title": {
+              "en": "Color"
+            }
+          },
+          {
+            "type": "text",
+            "name": "smallIcon",
+            "title": {
+              "en": "smallIcon"
+            },
+            "placeholder": {
+              "en": "mdi:speaker-multiple"
+            }
+          },
+          {
+            "type": "text",
+            "name": "largeIcon",
+            "title": {
+              "en": "Large Icon"
+            },
+            "placeholder": {
+              "en": "mdi:speaker-multiple"
+            }
+          },
+          {
+            "type": "dropdown",
+            "name": "corner",
+            "title": {
+              "en": "Corner"
+            },
+            "values": [
+              {
+                "id": "bottom_start",
+                "title": {
+                  "en": "Bottom left"
+                }
+              },
+              {
+                "id": "bottom_end",
+                "title": {
+                  "en": "Bottom right"
+                }
+              },
+              {
+                "id": "top_start",
+                "title": {
+                  "en": "Top left"
+                }
+              },
+              {
+                "id": "top_end",
+                "title": {
+                  "en": "Top right"
+                }
+              }
+            ]
+          },
+          {
+            "type": "number",
+            "name": "seconds",
+            "title": {
+              "en": "Seconds"
+            },
+            "placeholder": {
+              "en": "In degree celsius"
+            },
+            "step": 1
+          }
+        ]
+      },
+      {
+        "id": "send_device_notification_imageurl_all",
+        "title": {
+          "en": "Send notification with image url to AndroidTV",
+          "nl": "Verstuur notificatie met afbeelding url naar AndroidTV"
+        },
+        "titleFormatted": {
+          "en": "Send notification with image url to AndroidTV [[message]] [[title]] [[color]] [[image]] [[smallIcon]] [[largeIcon]] [[corner]] [[seconds]]",
+          "nl": "Verstuur notificatie met afbeelding url naar AndroidTV [[message]] [[title]] [[color]] [[image]] [[smallIcon]] [[largeIcon]] [[corner]] [[seconds]]"
         },
         "args": [
           {
