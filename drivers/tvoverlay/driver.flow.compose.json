@@ -1,0 +1,109 @@
+{
+  "actions": [
+    {
+      "id": "send_device_notification",
+      "title": {
+        "en": "Send notfication to AndroidTV"
+      },
+      "titleFormatted": {
+        "en": "Send notfication to AndroidTV [[message]] [[title]] [[corner]] [[seconds]]"
+      },
+      "args": [
+        {
+          "type": "text",
+          "name": "message",
+          "title": { "en": "Message" },
+          "placeholder": { "en": "Hello!" }
+        },
+        {
+          "type": "text",
+          "name": "title",
+          "title": { "en": "Title" },
+          "placeholder": { "en": "How are you?" }
+        },
+        {
+          "type": "dropdown",
+          "name": "corner",
+          "title": { "en": "Corner" },
+          "values": [
+            { "id": "bottom_start", "title": { "en": "Bottom left" } },
+            { "id": "bottom_end", "title": { "en": "Bottom right" } },
+            { "id": "top_start", "title": { "en": "Top left" } },
+            { "id": "top_end", "title": { "en": "Top right" } }
+          ]
+        },
+        {
+          "type": "number",
+          "name": "seconds",
+          "title": { "en": "Seconds" },
+          "placeholder": { "en": "In degree celsius" },
+          "step": 1
+        }
+      ]
+    },
+    {
+      "id": "send_device_notification_imageurl_all",
+      "title": {
+        "en": "Send notfication to AndroidTV"
+      },
+      "titleFormatted": {
+        "en": "Send notfication to AndroidTV [[message]] [[title]] [[color]] [[image]] [[smallIcon]] [[largeIcon]] [[corner]] [[seconds]]"
+      },
+      "args": [
+        {
+          "type": "text",
+          "name": "message",
+          "title": { "en": "Message" },
+          "placeholder": { "en": "Hello!" }
+        },
+        {
+          "type": "text",
+          "name": "title",
+          "title": { "en": "Title" },
+          "placeholder": { "en": "How are you?" }
+        },
+        {
+          "type": "color",
+          "name": "color",
+          "title": { "en": "Color" }
+        },
+        {
+          "type": "text",
+          "name": "image",
+          "title": { "en": "Image URL" },
+          "placeholder": { "en": "https://..../image.jpeg" }
+        },
+        {
+          "type": "text",
+          "name": "smallIcon",
+          "title": { "en": "smallIcon" },
+          "placeholder": { "en": "mdi:speaker-multiple" }
+        },
+        {
+          "type": "text",
+          "name": "largeIcon",
+          "title": { "en": "Large Icon" },
+          "placeholder": { "en": "mdi:speaker-multiple" }
+        },
+        {
+          "type": "dropdown",
+          "name": "corner",
+          "title": { "en": "Corner" },
+          "values": [
+            { "id": "bottom_start", "title": { "en": "Bottom left" } },
+            { "id": "bottom_end", "title": { "en": "Bottom right" } },
+            { "id": "top_start", "title": { "en": "Top left" } },
+            { "id": "top_end", "title": { "en": "Top right" } }
+          ]
+        },
+        {
+          "type": "number",
+          "name": "seconds",
+          "title": { "en": "Seconds" },
+          "placeholder": { "en": "In degree celsius" },
+          "step": 1
+        }
+      ]
+    }
+  ]
+}

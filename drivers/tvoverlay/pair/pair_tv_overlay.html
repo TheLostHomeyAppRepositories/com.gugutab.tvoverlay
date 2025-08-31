@@ -1,0 +1,54 @@
+<header class="homey-header">
+    <h1 class="homey-title" data-i18n="pair.title">
+        <!-- This will be filled with the translated string with key 'settings.title'. -->
+    </h1>
+    <p class="homey-subtitle" data-i18n="pair.subtitle">
+        <!-- This will be filled with the translated string with key 'settings.subtitle'. -->
+    </p>
+</header>
+<form class="homey-form">
+    <fieldset class="homey-form-fieldset">
+        <legend class="homey-form-legend" data-i18n="pair.logindata"></legend>
+
+        <div class="homey-form-group">
+            <label class="homey-form-label" for="ipAddress" data-i18n="pair.ipAddress"></label>
+            <input class="homey-form-input" id="ipAddress" type="text" value="192.168.178.75"/>
+        </div>
+        <div class="homey-form-group">
+            <label class="homey-form-label" for="port" data-i18n="pair.port"></label>
+            <input class="homey-form-input" id="port" type="text" value="5001"/>
+        </div>
+    </fieldset>
+    <button type="button" id="test" class="homey-button-primary-full" data-i18n="pair.submit"></button>
+</form>
+<script type="text/javascript">
+
+      const $ipAddress = document.getElementById('ipAddress');
+      const $port = document.getElementById('port');
+      const $submit = document.getElementById('test');
+
+      $submit.addEventListener('click', () => {
+        if ($submit.classList.contains('is-loading')) return;
+        $submit.classList.add('is-loading');
+
+        const data = {
+          "ipAddress": $ipAddress.value,
+          "port": $port.value
+        }
+
+        Homey.emit('validateLoginData', data)
+          .then(function (result) {
+            if (result) {
+              Homey.nextView();
+            } else {
+              Homey.alert('IP Address or Port number is incorrect.');
+            }
+          })
+          .catch(err => {
+            Homey.alert(err);
+          })
+          .finally(() => {
+            $submit.classList.remove('is-loading');
+          });
+      });
+</script>

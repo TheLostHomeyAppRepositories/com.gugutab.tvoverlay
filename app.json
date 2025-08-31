@@ -1,0 +1,283 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "com.gugutab.tvoverlay",
+  "version": "1.0.0",
+  "compatibility": ">=12.4.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "TvOverlay"
+  },
+  "description": {
+    "en": "Send notifications to your AndoridTV"
+  },
+  "category": [
+    "tools"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Stèphan Eizinga (MonkeySoft)",
+    "email": "stephan@monkeysoft.nl"
+  },
+  "flow": {
+    "actions": [
+      {
+        "id": "send_device_notification",
+        "title": {
+          "en": "Send notfication to AndroidTV"
+        },
+        "titleFormatted": {
+          "en": "Send notfication to AndroidTV [[message]] [[title]] [[corner]] [[seconds]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=tvoverlay"
+          },
+          {
+            "type": "text",
+            "name": "message",
+            "title": {
+              "en": "Message"
+            },
+            "placeholder": {
+              "en": "Hello!"
+            }
+          },
+          {
+            "type": "text",
+            "name": "title",
+            "title": {
+              "en": "Title"
+            },
+            "placeholder": {
+              "en": "How are you?"
+            }
+          },
+          {
+            "type": "dropdown",
+            "name": "corner",
+            "title": {
+              "en": "Corner"
+            },
+            "values": [
+              {
+                "id": "bottom_start",
+                "title": {
+                  "en": "Bottom left"
+                }
+              },
+              {
+                "id": "bottom_end",
+                "title": {
+                  "en": "Bottom right"
+                }
+              },
+              {
+                "id": "top_start",
+                "title": {
+                  "en": "Top left"
+                }
+              },
+              {
+                "id": "top_end",
+                "title": {
+                  "en": "Top right"
+                }
+              }
+            ]
+          },
+          {
+            "type": "number",
+            "name": "seconds",
+            "title": {
+              "en": "Seconds"
+            },
+            "placeholder": {
+              "en": "In degree celsius"
+            },
+            "step": 1
+          }
+        ]
+      },
+      {
+        "id": "send_device_notification_imageurl_all",
+        "title": {
+          "en": "Send notfication to AndroidTV"
+        },
+        "titleFormatted": {
+          "en": "Send notfication to AndroidTV [[message]] [[title]] [[color]] [[image]] [[smallIcon]] [[largeIcon]] [[corner]] [[seconds]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=tvoverlay"
+          },
+          {
+            "type": "text",
+            "name": "message",
+            "title": {
+              "en": "Message"
+            },
+            "placeholder": {
+              "en": "Hello!"
+            }
+          },
+          {
+            "type": "text",
+            "name": "title",
+            "title": {
+              "en": "Title"
+            },
+            "placeholder": {
+              "en": "How are you?"
+            }
+          },
+          {
+            "type": "color",
+            "name": "color",
+            "title": {
+              "en": "Color"
+            }
+          },
+          {
+            "type": "text",
+            "name": "image",
+            "title": {
+              "en": "Image URL"
+            },
+            "placeholder": {
+              "en": "https://..../image.jpeg"
+            }
+          },
+          {
+            "type": "text",
+            "name": "smallIcon",
+            "title": {
+              "en": "smallIcon"
+            },
+            "placeholder": {
+              "en": "mdi:speaker-multiple"
+            }
+          },
+          {
+            "type": "text",
+            "name": "largeIcon",
+            "title": {
+              "en": "Large Icon"
+            },
+            "placeholder": {
+              "en": "mdi:speaker-multiple"
+            }
+          },
+          {
+            "type": "dropdown",
+            "name": "corner",
+            "title": {
+              "en": "Corner"
+            },
+            "values": [
+              {
+                "id": "bottom_start",
+                "title": {
+                  "en": "Bottom left"
+                }
+              },
+              {
+                "id": "bottom_end",
+                "title": {
+                  "en": "Bottom right"
+                }
+              },
+              {
+                "id": "top_start",
+                "title": {
+                  "en": "Top left"
+                }
+              },
+              {
+                "id": "top_end",
+                "title": {
+                  "en": "Top right"
+                }
+              }
+            ]
+          },
+          {
+            "type": "number",
+            "name": "seconds",
+            "title": {
+              "en": "Seconds"
+            },
+            "placeholder": {
+              "en": "In degree celsius"
+            },
+            "step": 1
+          }
+        ]
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "TvOverlay"
+      },
+      "class": "other",
+      "capabilities": [],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "images": {
+        "small": "/drivers/tvoverlay/assets/images/small.png",
+        "large": "/drivers/tvoverlay/assets/images/large.png",
+        "xlarge": "/drivers/tvoverlay/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "pair_tv_overlay"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "id": "tvoverlay",
+      "settings": [
+        {
+          "id": "ip",
+          "type": "text",
+          "label": {
+            "en": "IP address"
+          }
+        },
+        {
+          "id": "port",
+          "type": "text",
+          "label": {
+            "en": "Port"
+          }
+        }
+      ]
+    }
+  ]
+}

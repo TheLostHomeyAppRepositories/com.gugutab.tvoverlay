@@ -1,0 +1,10 @@
+{
+  "pair": {
+    "title": "New TvOverlay device",
+    "subtitle": "",
+    "logindata": "Network address",
+    "ipAddress": "IP Address",
+    "port": "Port",
+    "submit": "Save changes"
+  }
+}
