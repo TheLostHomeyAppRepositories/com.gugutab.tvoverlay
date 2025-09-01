@@ -45,5 +45,6 @@
   "bugs": {
     "url": "https://github.com/steffjenl/com-gugutab-tvoverlay/issues"
   },
-  "support": "https://monkeysoft.nl/homey-integrations-support/"
+  "support": "https://monkeysoft.nl/homey-integrations-support/",
+  "homeyCommunityTopicId": 142475
 }
