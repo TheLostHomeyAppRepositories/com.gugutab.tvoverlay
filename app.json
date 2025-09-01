@@ -133,6 +133,273 @@
         ]
       },
       {
+        "id": "send_device_notification_image_short",
+        "title": {
+          "en": "Send notification with image to AndroidTV",
+          "nl": "Verstuur notificatie met afbeelding naar AndroidTV"
+        },
+        "titleFormatted": {
+          "en": "Send notification with image to AndroidTV [[message]] [[title]] [[droptoken]] [[corner]] [[seconds]]",
+          "nl": "Verstuur notificatie met afbeelding naar AndroidTV [[message]] [[title]] [[droptoken]] [[corner]] [[seconds]]"
+        },
+        "droptoken": "image",
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=tvoverlay"
+          },
+          {
+            "type": "text",
+            "name": "message",
+            "title": {
+              "en": "Message"
+            },
+            "placeholder": {
+              "en": "Hello!"
+            }
+          },
+          {
+            "type": "text",
+            "name": "title",
+            "title": {
+              "en": "Title"
+            },
+            "placeholder": {
+              "en": "How are you?"
+            }
+          },
+          {
+            "type": "dropdown",
+            "name": "corner",
+            "title": {
+              "en": "Corner"
+            },
+            "values": [
+              {
+                "id": "bottom_start",
+                "title": {
+                  "en": "Bottom left"
+                }
+              },
+              {
+                "id": "bottom_end",
+                "title": {
+                  "en": "Bottom right"
+                }
+              },
+              {
+                "id": "top_start",
+                "title": {
+                  "en": "Top left"
+                }
+              },
+              {
+                "id": "top_end",
+                "title": {
+                  "en": "Top right"
+                }
+              }
+            ]
+          },
+          {
+            "type": "number",
+            "name": "seconds",
+            "title": {
+              "en": "Seconds"
+            },
+            "placeholder": {
+              "en": "In degree celsius"
+            },
+            "step": 1
+          }
+        ]
+      },
+      {
+        "id": "send_device_notification_imageurl_short",
+        "title": {
+          "en": "Send notification with image url to AndroidTV",
+          "nl": "Verstuur notificatie met afbeelding url naar AndroidTV"
+        },
+        "titleFormatted": {
+          "en": "Send notification with image url to AndroidTV [[message]] [[title]] [[image]] [[corner]] [[seconds]]",
+          "nl": "Verstuur notificatie met afbeelding url naar AndroidTV [[message]] [[title]] [[image]] [[corner]] [[seconds]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=tvoverlay"
+          },
+          {
+            "type": "text",
+            "name": "message",
+            "title": {
+              "en": "Message"
+            },
+            "placeholder": {
+              "en": "Hello!"
+            }
+          },
+          {
+            "type": "text",
+            "name": "title",
+            "title": {
+              "en": "Title"
+            },
+            "placeholder": {
+              "en": "How are you?"
+            }
+          },
+          {
+            "type": "text",
+            "name": "image",
+            "title": {
+              "en": "Image URL"
+            },
+            "placeholder": {
+              "en": "https://..../image.jpeg"
+            }
+          },
+          {
+            "type": "dropdown",
+            "name": "corner",
+            "title": {
+              "en": "Corner"
+            },
+            "values": [
+              {
+                "id": "bottom_start",
+                "title": {
+                  "en": "Bottom left"
+                }
+              },
+              {
+                "id": "bottom_end",
+                "title": {
+                  "en": "Bottom right"
+                }
+              },
+              {
+                "id": "top_start",
+                "title": {
+                  "en": "Top left"
+                }
+              },
+              {
+                "id": "top_end",
+                "title": {
+                  "en": "Top right"
+                }
+              }
+            ]
+          },
+          {
+            "type": "number",
+            "name": "seconds",
+            "title": {
+              "en": "Seconds"
+            },
+            "placeholder": {
+              "en": "In degree celsius"
+            },
+            "step": 1
+          }
+        ]
+      },
+      {
+        "id": "send_device_notification_videourl_short",
+        "title": {
+          "en": "Send notification with video url to AndroidTV",
+          "nl": "Verstuur notificatie met video url naar AndroidTV"
+        },
+        "titleFormatted": {
+          "en": "Send notification with video url to AndroidTV [[message]] [[title]] [[video]] [[corner]] [[seconds]]",
+          "nl": "Verstuur notificatie met video url naar AndroidTV [[message]] [[title]] [[video]] [[corner]] [[seconds]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=tvoverlay"
+          },
+          {
+            "type": "text",
+            "name": "message",
+            "title": {
+              "en": "Message"
+            },
+            "placeholder": {
+              "en": "Hello!"
+            }
+          },
+          {
+            "type": "text",
+            "name": "title",
+            "title": {
+              "en": "Title"
+            },
+            "placeholder": {
+              "en": "How are you?"
+            }
+          },
+          {
+            "type": "text",
+            "name": "video",
+            "title": {
+              "en": "Video URL"
+            },
+            "placeholder": {
+              "en": "rtsp://..../stream"
+            }
+          },
+          {
+            "type": "dropdown",
+            "name": "corner",
+            "title": {
+              "en": "Corner"
+            },
+            "values": [
+              {
+                "id": "bottom_start",
+                "title": {
+                  "en": "Bottom left"
+                }
+              },
+              {
+                "id": "bottom_end",
+                "title": {
+                  "en": "Bottom right"
+                }
+              },
+              {
+                "id": "top_start",
+                "title": {
+                  "en": "Top left"
+                }
+              },
+              {
+                "id": "top_end",
+                "title": {
+                  "en": "Top right"
+                }
+              }
+            ]
+          },
+          {
+            "type": "number",
+            "name": "seconds",
+            "title": {
+              "en": "Seconds"
+            },
+            "placeholder": {
+              "en": "In degree celsius"
+            },
+            "step": 1
+          }
+        ]
+      },
+      {
         "id": "send_device_notification_image_all",
         "title": {
           "en": "Send notification with image to AndroidTV",
@@ -477,6 +744,24 @@
               "en": "In degree celsius"
             },
             "step": 1
+          }
+        ]
+      },
+      {
+        "id": "send_device_set_screen_on",
+        "title": {
+          "en": "Set screen on",
+          "nl": "Zet scherm aan"
+        },
+        "titleFormatted": {
+          "en": "Set screen on",
+          "nl": "Zet scherm aan"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=tvoverlay"
           }
         ]
       }

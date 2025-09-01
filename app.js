@@ -18,14 +18,81 @@ module.exports = class TvOverlay extends Homey.App {
       if (typeof args.device.getData() !== 'undefined') {
         const settings = args.device.getSettings();
         this.homey.app.api.setSettings(settings.ip, settings.port);
-        this.log('test');
-        this.log(settings.ip);
-        return this.homey.app.api.sendNotifyWithImage(
+        return this.homey.app.api.sendNotify(
           args.message,
           args.title,
           0,
           null,
           null,
+          null,
+          args.corner,
+          args.seconds
+        );
+      }
+      return Promise.resolve(true);
+    });
+    //
+    const _sendNotificationImageShort = this.homey.flow.getActionCard('send_device_notification_image_short');
+    _sendNotificationImageShort.registerRunListener(async (args, state) => {
+      if (typeof args.device.getData() !== 'undefined') {
+        const settings = args.device.getSettings();
+        this.homey.app.api.setSettings(settings.ip, settings.port);
+        //
+        if(args.droptoken != null) {
+          const stream = await args.droptoken.getStream();
+
+          const buffer = await toArray(stream).then(function (parts) {
+            const buffers = parts.map(part => Buffer.isBuffer(part) ? part : Buffer.from(part));
+            return Buffer.concat(buffers);
+          });
+
+          return this.homey.app.api.sendNotifyWithImage(
+            args.message,
+            args.title,
+            0,
+            null,
+            buffer.toString('base64'),
+            null,
+            null,
+            args.corner,
+            args.seconds
+          );
+        }
+      }
+      return Promise.resolve(true);
+    });
+    //
+    const _sendNotificationImageUrlShort = this.homey.flow.getActionCard('send_device_notification_imageurl_short');
+    _sendNotificationImageUrlShort.registerRunListener(async (args, state) => {
+      if (typeof args.device.getData() !== 'undefined') {
+        const settings = args.device.getSettings();
+        this.homey.app.api.setSettings(settings.ip, settings.port);
+        return this.homey.app.api.sendNotifyWithImage(
+          args.message,
+          args.title,
+          0,
+          null,
+          args.image,
+          null,
+          null,
+          args.corner,
+          args.seconds
+        );
+      }
+      return Promise.resolve(true);
+    });
+    //
+    const _sendNotificationVideoUrlShort = this.homey.flow.getActionCard('send_device_notification_videourl_short');
+    _sendNotificationVideoUrlShort.registerRunListener(async (args, state) => {
+      if (typeof args.device.getData() !== 'undefined') {
+        const settings = args.device.getSettings();
+        this.homey.app.api.setSettings(settings.ip, settings.port);
+        return this.homey.app.api.sendNotifyWithVideo(
+          args.message,
+          args.title,
+          0,
+          null,
+          args.video,
           null,
           null,
           args.corner,
@@ -44,7 +111,6 @@ module.exports = class TvOverlay extends Homey.App {
         if(args.droptoken != null) {
           const stream = await args.droptoken.getStream();
 
-          const base64Image = '';
           const buffer = await toArray(stream).then(function (parts) {
             const buffers = parts.map(part => Buffer.isBuffer(part) ? part : Buffer.from(part));
             return Buffer.concat(buffers);
@@ -71,7 +137,6 @@ module.exports = class TvOverlay extends Homey.App {
       if (typeof args.device.getData() !== 'undefined') {
         const settings = args.device.getSettings();
         this.homey.app.api.setSettings(settings.ip, settings.port);
-        this.log(settings.ip);
         return this.homey.app.api.sendNotifyWithImage(
           args.message,
           args.title,
@@ -92,8 +157,7 @@ module.exports = class TvOverlay extends Homey.App {
       if (typeof args.device.getData() !== 'undefined') {
         const settings = args.device.getSettings();
         this.homey.app.api.setSettings(settings.ip, settings.port);
-        this.log(settings.ip);
-        return this.homey.app.api.sendNotifyWithImage(
+        return this.homey.app.api.sendNotifyWithVideo(
           args.message,
           args.title,
           0,
