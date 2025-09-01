@@ -7,5 +7,8 @@
   },
   "1.0.2": {
     "en": "Add extra action cards"
+  },
+  "1.0.3": {
+    "en": "Add support for Homey Pro 2019 and repair option"
   }
 }
