@@ -2,7 +2,6 @@
 
 const Homey = require('homey');
 const TvOverlayAPI = require('./lib/tvoverlay-api');
-const {Base64Encode} = require('base64-stream');
 const toArray = require('stream-to-array');
 
 module.exports = class TvOverlay extends Homey.App {
@@ -21,12 +20,10 @@ module.exports = class TvOverlay extends Homey.App {
         this.homey.app.api.setSettings(settings.ip, settings.port);
         this.log('test');
         this.log(settings.ip);
-        return this.homey.app.api.sendNotify(
+        return this.homey.app.api.sendNotifyWithImage(
           args.message,
           args.title,
           0,
-          null,
-          null,
           null,
           null,
           null,
@@ -53,12 +50,10 @@ module.exports = class TvOverlay extends Homey.App {
             return Buffer.concat(buffers);
           });
 
-          return this.homey.app.api.sendNotify(
+          return this.homey.app.api.sendNotifyWithImage(
             args.message,
             args.title,
             0,
-            null,
-            null,
             args.color,
             buffer.toString('base64'),
             args.smallIcon,
@@ -66,8 +61,6 @@ module.exports = class TvOverlay extends Homey.App {
             args.corner,
             args.seconds
           );
-
-
         }
       }
       return Promise.resolve(true);
@@ -79,14 +72,33 @@ module.exports = class TvOverlay extends Homey.App {
         const settings = args.device.getSettings();
         this.homey.app.api.setSettings(settings.ip, settings.port);
         this.log(settings.ip);
-        return this.homey.app.api.sendNotify(
+        return this.homey.app.api.sendNotifyWithImage(
           args.message,
           args.title,
           0,
-          null,
-          null,
           args.color,
           args.image,
+          args.smallIcon,
+          args.largeIcon,
+          args.corner,
+          args.seconds
+        );
+      }
+      return Promise.resolve(true);
+    });
+    //
+    const _sendNotificationVideoUrlAll = this.homey.flow.getActionCard('send_device_notification_videourl_all');
+    _sendNotificationVideoUrlAll.registerRunListener(async (args, state) => {
+      if (typeof args.device.getData() !== 'undefined') {
+        const settings = args.device.getSettings();
+        this.homey.app.api.setSettings(settings.ip, settings.port);
+        this.log(settings.ip);
+        return this.homey.app.api.sendNotifyWithImage(
+          args.message,
+          args.title,
+          0,
+          args.color,
+          args.video,
           args.smallIcon,
           args.largeIcon,
           args.corner,
