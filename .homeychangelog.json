@@ -10,5 +10,8 @@
   },
   "1.0.3": {
     "en": "Add support for Homey Pro 2019 and repair option"
+  },
+  "1.0.4": {
+    "en": "Add action card for setting layout and screen on"
   }
 }
