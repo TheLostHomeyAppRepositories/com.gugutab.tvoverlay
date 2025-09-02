@@ -126,7 +126,7 @@
               "en": "Seconds"
             },
             "placeholder": {
-              "en": "In degree celsius"
+              "en": "In seconds"
             },
             "step": 1
           }
@@ -209,7 +209,7 @@
               "en": "Seconds"
             },
             "placeholder": {
-              "en": "In degree celsius"
+              "en": "In seconds"
             },
             "step": 1
           }
@@ -301,7 +301,7 @@
               "en": "Seconds"
             },
             "placeholder": {
-              "en": "In degree celsius"
+              "en": "In seconds"
             },
             "step": 1
           }
@@ -393,7 +393,7 @@
               "en": "Seconds"
             },
             "placeholder": {
-              "en": "In degree celsius"
+              "en": "In seconds"
             },
             "step": 1
           }
@@ -503,7 +503,7 @@
               "en": "Seconds"
             },
             "placeholder": {
-              "en": "In degree celsius"
+              "en": "In seconds"
             },
             "step": 1
           }
@@ -622,7 +622,7 @@
               "en": "Seconds"
             },
             "placeholder": {
-              "en": "In degree celsius"
+              "en": "In seconds"
             },
             "step": 1
           }
@@ -741,7 +741,7 @@
               "en": "Seconds"
             },
             "placeholder": {
-              "en": "In degree celsius"
+              "en": "In seconds"
             },
             "step": 1
           }
@@ -764,6 +764,48 @@
             "filter": "driver_id=tvoverlay"
           }
         ]
+      },
+      {
+        "id": "set_notification_layout",
+        "title": {
+          "en": "Set Notification Layout to AndroidTV",
+          "nl": "Stel notificatie layout in voor AndroidTV"
+        },
+        "titleFormatted": {
+          "en": "Set Notification Layout to AndroidTV Display Image: [[imageDisplay]] Display Small Image: [[imageSmall]] Display Source: [[sourceDisplay]]",
+          "nl": "Stel notificatie layout in voor AndroidTV Toon afbeelding: [[imageDisplay]] Toon klein afbeelding: [[imageSmall]] Toon bron: [[sourceDisplay]]"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=tvoverlay"
+          },
+          {
+            "type": "checkbox",
+            "name": "imageDisplay",
+            "title": {
+              "en": "Display Image",
+              "nl": "Toon afbeelding"
+            }
+          },
+          {
+            "type": "checkbox",
+            "name": "imageSmall",
+            "title": {
+              "en": "Display Small Image",
+              "nl": "Toon klein afbeelding"
+            }
+          },
+          {
+            "type": "checkbox",
+            "name": "sourceDisplay",
+            "title": {
+              "en": "Display Source",
+              "nl": "Toon bron"
+            }
+          }
+        ]
       }
     ]
   },
@@ -773,7 +815,9 @@
         "en": "TvOverlay"
       },
       "class": "other",
-      "capabilities": [],
+      "capabilities": [
+        "set_screen_on"
+      ],
       "platforms": [
         "local"
       ],
@@ -824,5 +868,18 @@
         }
       ]
     }
-  ]
+  ],
+  "capabilities": {
+    "set_screen_on": {
+      "type": "boolean",
+      "title": {
+        "en": "Screen On",
+        "nl": "Scherm Aan"
+      },
+      "getable": true,
+      "setable": true,
+      "uiComponent": "toggle",
+      "uiQuickAction": true
+    }
+  }
 }

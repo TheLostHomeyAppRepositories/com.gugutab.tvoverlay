@@ -8,7 +8,21 @@ module.exports = class TvOverlayDevice extends Homey.Device {
    * onInit is called when the device is initialized.
    */
   async onInit() {
+    if (this.hasCapability('onoff')) {
+      await this.removeCapability('onoff');
+    }
+    if (!this.hasCapability('set_screen_on')) {
+      await this.addCapability('set_screen_on');
+    }
     this.log('TvOverlayDevice has been initialized');
+    this.registerCapabilityListener('set_screen_on', async (value) => {
+      this.log('Setting screen on');
+      const settings = this.getSettings();
+      this.homey.app.api.setSettings(settings.ip, settings.port);
+      this.homey.app.api.setScreenOn();
+      this.setCapabilityValue('set_screen_on', true);
+      return false;
+    });
   }
 
   /**

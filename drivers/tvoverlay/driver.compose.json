@@ -3,7 +3,9 @@
     "en": "TvOverlay"
   },
   "class": "other",
-  "capabilities": [],
+  "capabilities": [
+    "set_screen_on"
+  ],
   "platforms": [
     "local"
   ],

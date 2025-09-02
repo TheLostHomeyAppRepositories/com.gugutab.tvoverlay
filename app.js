@@ -171,5 +171,29 @@ module.exports = class TvOverlay extends Homey.App {
       }
       return Promise.resolve(true);
     });
+    // send_device_set_screen_on
+    const _sendDeviceSetScreenOn = this.homey.flow.getActionCard('send_device_set_screen_on');
+    _sendDeviceSetScreenOn.registerRunListener(async (args, state) => {
+      if (typeof args.device.getData() !== 'undefined') {
+        const settings = args.device.getSettings();
+        this.homey.app.api.setSettings(settings.ip, settings.port);
+        return this.homey.app.api.setScreenOn();
+      }
+      return Promise.resolve(true);
+    });
+    // set_notification_layout
+    const _setNotificationLayout = this.homey.flow.getActionCard('set_notification_layout');
+    _setNotificationLayout.registerRunListener(async (args, state) => {
+      if (typeof args.device.getData() !== 'undefined') {
+        const settings = args.device.getSettings();
+        this.homey.app.api.setSettings(settings.ip, settings.port);
+        return this.homey.app.api.setNotificationLayout(
+          args.imageDisplay,
+          args.imageSmall,
+          args.sourceDisplay,
+        );
+      }
+      return Promise.resolve(true);
+    });
   }
 };

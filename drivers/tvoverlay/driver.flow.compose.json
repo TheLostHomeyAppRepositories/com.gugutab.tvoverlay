@@ -38,7 +38,7 @@
           "type": "number",
           "name": "seconds",
           "title": { "en": "Seconds" },
-          "placeholder": { "en": "In degree celsius" },
+          "placeholder": { "en": "In seconds" },
           "step": 1
         }
       ]
@@ -82,7 +82,7 @@
           "type": "number",
           "name": "seconds",
           "title": { "en": "Seconds" },
-          "placeholder": { "en": "In degree celsius" },
+          "placeholder": { "en": "In seconds" },
           "step": 1
         }
       ]
@@ -131,7 +131,7 @@
           "type": "number",
           "name": "seconds",
           "title": { "en": "Seconds" },
-          "placeholder": { "en": "In degree celsius" },
+          "placeholder": { "en": "In seconds" },
           "step": 1
         }
       ]
@@ -180,7 +180,7 @@
           "type": "number",
           "name": "seconds",
           "title": { "en": "Seconds" },
-          "placeholder": { "en": "In degree celsius" },
+          "placeholder": { "en": "In seconds" },
           "step": 1
         }
       ]
@@ -241,7 +241,7 @@
           "type": "number",
           "name": "seconds",
           "title": { "en": "Seconds" },
-          "placeholder": { "en": "In degree celsius" },
+          "placeholder": { "en": "In seconds" },
           "step": 1
         }
       ]
@@ -307,7 +307,7 @@
           "type": "number",
           "name": "seconds",
           "title": { "en": "Seconds" },
-          "placeholder": { "en": "In degree celsius" },
+          "placeholder": { "en": "In seconds" },
           "step": 1
         }
       ]
@@ -373,7 +373,7 @@
           "type": "number",
           "name": "seconds",
           "title": { "en": "Seconds" },
-          "placeholder": { "en": "In degree celsius" },
+          "placeholder": { "en": "In seconds" },
           "step": 1
         }
       ]
@@ -388,6 +388,43 @@
         "en": "Set screen on",
         "nl": "Zet scherm aan"
       }
+    },
+    {
+      "id": "set_notification_layout",
+      "title": {
+        "en": "Set Notification Layout to AndroidTV",
+        "nl": "Stel notificatie layout in voor AndroidTV"
+      },
+      "titleFormatted": {
+        "en": "Set Notification Layout to AndroidTV Display Image: [[imageDisplay]] Display Small Image: [[imageSmall]] Display Source: [[sourceDisplay]]",
+        "nl": "Stel notificatie layout in voor AndroidTV Toon afbeelding: [[imageDisplay]] Toon klein afbeelding: [[imageSmall]] Toon bron: [[sourceDisplay]]"
+      },
+      "args": [
+        {
+          "type": "checkbox",
+          "name": "imageDisplay",
+          "title": {
+            "en": "Display Image",
+            "nl": "Toon afbeelding"
+          }
+        },
+        {
+          "type": "checkbox",
+          "name": "imageSmall",
+          "title": {
+            "en": "Display Small Image",
+            "nl": "Toon klein afbeelding"
+          }
+        },
+        {
+          "type": "checkbox",
+          "name": "sourceDisplay",
+          "title": {
+            "en": "Display Source",
+            "nl": "Toon bron"
+          }
+        }
+      ]
     }
   ]
 }
