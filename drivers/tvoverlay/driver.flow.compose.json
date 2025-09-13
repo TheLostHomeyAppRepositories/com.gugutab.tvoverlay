@@ -188,12 +188,12 @@
     {
       "id": "send_device_notification_image_all",
       "title": {
-        "en": "Send notification with image to AndroidTV",
-        "nl": "Verstuur notificatie met afbeelding naar AndroidTV"
+        "en": "Send notification with image with all fields to AndroidTV",
+        "nl": "Verstuur notificatie met afbeelding met alle velden naar AndroidTV"
       },
       "titleFormatted": {
-        "en": "Send notification with image to AndroidTV [[message]] [[title]] [[color]] [[droptoken]] [[smallIcon]] [[largeIcon]] [[corner]] [[seconds]]",
-        "nl": "Verstuur notificatie met afbeelding naar AndroidTV [[message]] [[title]] [[droptoken]] [[color]] [[smallIcon]] [[largeIcon]] [[corner]] [[seconds]]"
+        "en": "Send notification with image with all fields to AndroidTV [[message]] [[title]] [[color]] [[droptoken]] [[smallIcon]] [[largeIcon]] [[corner]] [[seconds]]",
+        "nl": "Verstuur notificatie met afbeelding met alle velden naar AndroidTV [[message]] [[title]] [[droptoken]] [[color]] [[smallIcon]] [[largeIcon]] [[corner]] [[seconds]]"
       },
       "droptoken": "image",
       "args": [
@@ -249,12 +249,12 @@
     {
       "id": "send_device_notification_imageurl_all",
       "title": {
-        "en": "Send notification with image url to AndroidTV",
-        "nl": "Verstuur notificatie met afbeelding url naar AndroidTV"
+        "en": "Send notification with image url with all fields to AndroidTV",
+        "nl": "Verstuur notificatie met afbeelding url met alle velden naar AndroidTV"
       },
       "titleFormatted": {
-        "en": "Send notification with image url to AndroidTV [[message]] [[title]] [[color]] [[image]] [[smallIcon]] [[largeIcon]] [[corner]] [[seconds]]",
-        "nl": "Verstuur notificatie met afbeelding url naar AndroidTV [[message]] [[title]] [[color]] [[image]] [[smallIcon]] [[largeIcon]] [[corner]] [[seconds]]"
+        "en": "Send notification with image url with all fields to AndroidTV [[message]] [[title]] [[color]] [[image]] [[smallIcon]] [[largeIcon]] [[corner]] [[seconds]]",
+        "nl": "Verstuur notificatie met afbeelding url met alle velden naar AndroidTV [[message]] [[title]] [[color]] [[image]] [[smallIcon]] [[largeIcon]] [[corner]] [[seconds]]"
       },
       "args": [
         {
@@ -315,12 +315,12 @@
     {
       "id": "send_device_notification_videourl_all",
       "title": {
-        "en": "Send notification with video url to AndroidTV",
-        "nl": "Verstuur notificatie met video url naar AndroidTV"
+        "en": "Send notification with video url with all fields to AndroidTV",
+        "nl": "Verstuur notificatie met video url met alle velden naar AndroidTV"
       },
       "titleFormatted": {
-        "en": "Send notification with video url to AndroidTV [[message]] [[title]] [[color]] [[video]] [[smallIcon]] [[largeIcon]] [[corner]] [[seconds]]",
-        "nl": "Verstuur notificatie met video url naar AndroidTV [[message]] [[title]] [[color]] [[video]] [[smallIcon]] [[largeIcon]] [[corner]] [[seconds]]"
+        "en": "Send notification with video url with all fields to AndroidTV [[message]] [[title]] [[color]] [[video]] [[smallIcon]] [[largeIcon]] [[corner]] [[seconds]]",
+        "nl": "Verstuur notificatie met video url met alle velden naar AndroidTV [[message]] [[title]] [[color]] [[video]] [[smallIcon]] [[largeIcon]] [[corner]] [[seconds]]"
       },
       "args": [
         {
