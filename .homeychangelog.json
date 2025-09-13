@@ -13,5 +13,8 @@
   },
   "1.0.4": {
     "en": "Add action card for setting layout and screen on"
+  },
+  "1.0.5": {
+    "en": "Add new App icon and some translation changes"
   }
 }
