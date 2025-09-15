@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="  1024 1024" width="1024" height="1024">
+    <g fill="none" stroke="#000" stroke-width="56" stroke-linecap="round" stroke-linejoin="round">
+        <!-- Rounded outer card -->
+        <rect x="96" y="176" width="832" height="672" rx="112" ry="112"/>
+        <!-- Left circle -->
+        <circle cx="264" cy="464" r="80" />
+        <!-- Two horizontal rounded bars -->
+        <rect x="410" y="380" width="456" height="72" rx="36" ry="36"/>
+        <rect x="410" y="540" width="456" height="72" rx="36" ry="36"/>
+    </g>
+</svg>
