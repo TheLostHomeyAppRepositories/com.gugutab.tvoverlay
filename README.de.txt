@@ -11,8 +11,7 @@ Perfekt für:
 •  Erinnerungen (z.B. „Müll rausbringen“)
 •  Individuelle Nachrichten während Automatisierungen
 
-Um diese Homey-App zu nutzen, musst du die TVOverlay-Client-App auf deinem Android TV installieren:
-https://play.google.com/store/apps/details?id=com.tabdeveloper.tvoverlay&hl=de
+Um diese Homey-App zu nutzen, musst du die TVOverlay-Client-App auf deinem Android TV installieren. Du findest sie im Google Play Store oder kannst sie direkt von der TVOverlay-Website herunterladen.
 
 Flow-Karten
 TVOverlay integriert sich in Homey Flows mit einfachen, aber leistungsstarken Karten. Das kannst du tun:

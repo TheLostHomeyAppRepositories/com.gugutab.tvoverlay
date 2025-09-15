@@ -11,8 +11,7 @@ Perfect for:
 •  Reminders (e.g. “Take out the trash”)
 •  Custom messages during automations
 
-To use this Homey app, you need to install the TVOverlay client on your Android TV:
-https://play.google.com/store/apps/details?id=com.tabdeveloper.tvoverlay&hl=nl
+To use this Homey app, you need to install the TVOverlay client on your Android TV. You can find it on the Google Play Store or download it directly from the TVOverlay website.
 
 Flow Cards
 TVOverlay integrates with Homey Flows using simple yet powerful cards. Here’s what you can do:

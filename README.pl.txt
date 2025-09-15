@@ -11,8 +11,7 @@ Idealne do:
 •  Przypomnień (np. „Wynieś śmieci”)
 •  Wiadomości niestandardowych podczas automatyzacji
 
-Aby korzystać z tej aplikacji Homey, musisz zainstalować klienta TVOverlay na swoim Android TV:
-https://play.google.com/store/apps/details?id=com.tabdeveloper.tvoverlay&hl=pl
+Aby korzystać z tej aplikacji Homey, musisz zainstalować klienta TVOverlay na swoim Android TV. Możesz go znaleźć w Google Play Store lub pobrać bezpośrednio ze strony internetowej TVOverlay.
 
 Karty Flow
 TVOverlay integruje się z Flow Homey za pomocą prostych, ale potężnych kart. Co możesz zrobić:

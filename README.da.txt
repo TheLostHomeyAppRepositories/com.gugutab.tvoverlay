@@ -11,8 +11,7 @@ Perfekt til:
 •  Påmindelser (fx “Tag skraldet ud”)
 •  Tilpassede beskeder under automatiseringer
 
-For at bruge denne Homey-app skal du installere TVOverlay-klienten på din Android TV:
-https://play.google.com/store/apps/details?id=com.tabdeveloper.tvoverlay&hl=da
+For at bruge denne Homey-app skal du installere TVOverlay-klienten på din Android TV. Du kan finde den i Google Play Butik eller downloade den direkte fra TVOverlay-webstedet.
 
 Flowkort
 TVOverlay integrerer med Homey Flows via enkle, men kraftfulde kort. Det kan du gøre:

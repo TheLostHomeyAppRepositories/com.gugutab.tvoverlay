@@ -11,8 +11,7 @@ Perfekt för:
 •  Påminnelser (t.ex. “Ta ut soporna”)
 •  Anpassade meddelanden vid automationer
 
-För att använda denna Homey-app måste du installera TVOverlay-klienten på din Android TV:
-https://play.google.com/store/apps/details?id=com.tabdeveloper.tvoverlay&hl=sv
+För att använda denna Homey-app måste du installera TVOverlay-klienten på din Android TV. Du kan hitta den på Google Play Butik eller ladda ner den direkt från TVOverlay-webbplatsen.
 
 Flowkort
 TVOverlay integreras med Homey Flows med enkla men kraftfulla kort. Det här kan du göra:

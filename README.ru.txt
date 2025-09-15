@@ -11,8 +11,7 @@ TVOverlay соединяет вашу систему умного дома Homey
 •  Напоминаний (например, «Вынести мусор»)
 •  Индивидуальных сообщений во время автоматизаций
 
-Чтобы использовать это приложение Homey, установите клиент TVOverlay на свой Android TV:
-https://play.google.com/store/apps/details?id=com.tabdeveloper.tvoverlay&hl=ru
+Чтобы использовать это приложение Homey, установите клиент TVOverlay на свой Android TV. Вы можете найти его в Google Play Store или скачать напрямую с сайта TVOverlay.
 
 Карточки Flow
 TVOverlay интегрируется с Homey Flows с помощью простых, но мощных карточек. Вот что вы можете делать:

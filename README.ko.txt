@@ -11,8 +11,7 @@ TVOverlay는 Homey 스마트 홈 시스템을 TVOverlay 클라이언트 앱을 �
 •  알림 (예: “쓰레기 버리기”)
 •  자동화 중 맞춤 메시지
 
-이 Homey 앱을 사용하려면 Android TV에 TVOverlay 클라이언트를 설치해야 합니다:
-https://play.google.com/store/apps/details?id=com.tabdeveloper.tvoverlay&hl=ko
+이 Homey 앱을 사용하려면 Android TV에 TVOverlay 클라이언트를 설치해야 합니다. Google Play 스토어에서 찾거나 TVOverlay 웹사이트에서 직접 다운로드할 수 있습니다.
 
 플로우 카드
 TVOverlay는 간단하면서도 강력한 카드로 Homey 플로우와 통합됩니다. 할 수 있는 일:

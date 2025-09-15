@@ -6,14 +6,37 @@
   "sdk": 3,
   "color": "#00c37f",
   "brandColor": "#00c37f",
+  "homepage": "https://play.google.com/store/apps/details?id=com.tabdeveloper.tvoverlay&hl=nl",
   "platforms": [
     "local"
   ],
   "name": {
-    "en": "TvOverlay"
+    "en": "TvOverlay",
+    "nl": "TvOverlay",
+    "de": "TvOverlay",
+    "fr": "TvOverlay",
+    "it": "TvOverlay",
+    "sv": "TvOverlay",
+    "no": "TvOverlay",
+    "es": "TvOverlay",
+    "da": "TvOverlay",
+    "ru": "TvOverlay",
+    "pl": "TvOverlay",
+    "ko": "TvOverlay"
   },
   "description": {
-    "en": "Send notifications to your AndoridTV"
+    "en": "Send notifications to your AndoridTV",
+    "nl": "Stuur meldingen naar je AndoridTV",
+    "de": "Sende Benachrichtigungen an dein AndoridTV",
+    "fr": "Envoyez des notifications à votre AndoridTV",
+    "it": "Invia notifiche al tuo AndoridTV",
+    "sv": "Skicka aviseringar till din AndoridTV",
+    "no": "Send varsler til din AndoridTV",
+    "es": "Envía notificaciones a tu AndoridTV",
+    "da": "Send beskeder til din AndoridTV",
+    "ru": "Отправляйте уведомления на ваш AndoridTV",
+    "pl": "Wysyłaj powiadomienia na swój AndoridTV",
+    "ko": "AndoridTV로 알림을 보내세요"
   },
   "category": [
     "tools"
@@ -54,11 +77,31 @@
         "id": "send_device_notification",
         "title": {
           "en": "Send notfication to AndroidTV",
-          "nl": "Verstuur notificatie naar AndroidTV"
+          "nl": "Verstuur notificatie naar AndroidTV",
+          "de": "Benachrichtigung an AndroidTV senden",
+          "fr": "Envoyer une notification à AndroidTV",
+          "it": "Invia notifica a AndroidTV",
+          "sv": "Skicka avisering till AndroidTV",
+          "no": "Send varsling til AndroidTV",
+          "es": "Enviar notificación a AndroidTV",
+          "da": "Send notifikation til AndroidTV",
+          "ru": "Отправить уведомление на AndroidTV",
+          "pl": "Wyślij powiadomienie do AndroidTV",
+          "ko": "AndroidTV에 알림 보내기"
         },
         "titleFormatted": {
           "en": "Send notfication to AndroidTV [[message]] [[title]] [[corner]] [[seconds]]",
-          "nl": "Verstuur notificatie naar AndroidTV [[message]] [[title]] [[corner]] [[seconds]]"
+          "nl": "Verstuur notificatie naar AndroidTV [[message]] [[title]] [[corner]] [[seconds]]",
+          "de": "Benachrichtigung an AndroidTV senden [[message]] [[title]] [[corner]] [[seconds]]",
+          "fr": "Envoyer une notification à AndroidTV [[message]] [[title]] [[corner]] [[seconds]]",
+          "it": "Invia notifica a AndroidTV [[message]] [[title]] [[corner]] [[seconds]]",
+          "sv": "Skicka avisering till AndroidTV [[message]] [[title]] [[corner]] [[seconds]]",
+          "no": "Send varsling til AndroidTV [[message]] [[title]] [[corner]] [[seconds]]",
+          "es": "Enviar notificación a AndroidTV [[message]] [[title]] [[corner]] [[seconds]]",
+          "da": "Send notifikation til AndroidTV [[message]] [[title]] [[corner]] [[seconds]]",
+          "ru": "Отправить уведомление на AndroidTV [[message]] [[title]] [[corner]] [[seconds]]",
+          "pl": "Wyślij powiadomienie do AndroidTV [[message]] [[title]] [[corner]] [[seconds]]",
+          "ko": "AndroidTV에 알림 보내기 [[message]] [[title]] [[corner]] [[seconds]]"
         },
         "args": [
           {
@@ -812,7 +855,18 @@
   "drivers": [
     {
       "name": {
-        "en": "TvOverlay"
+        "en": "TvOverlay",
+        "nl": "TvOverlay",
+        "de": "TvOverlay",
+        "fr": "TvOverlay",
+        "it": "TvOverlay",
+        "sv": "TvOverlay",
+        "no": "TvOverlay",
+        "es": "TvOverlay",
+        "da": "TvOverlay",
+        "ru": "TvOverlay",
+        "pl": "TvOverlay",
+        "ko": "TvOverlay"
       },
       "class": "other",
       "capabilities": [
@@ -856,14 +910,36 @@
           "id": "ip",
           "type": "text",
           "label": {
-            "en": "IP address"
+            "en": "IP address",
+            "nl": "IP-adres",
+            "de": "IP-Adresse",
+            "fr": "Adresse IP",
+            "it": "Indirizzo IP",
+            "sv": "IP-adress",
+            "no": "IP-adresse",
+            "es": "Dirección IP",
+            "da": "IP-adresse",
+            "ru": "IP-адрес",
+            "pl": "Adres IP",
+            "ko": "IP 주소"
           }
         },
         {
           "id": "port",
           "type": "text",
           "label": {
-            "en": "Port"
+            "en": "Port",
+            "nl": "Poort",
+            "de": "Port",
+            "fr": "Port",
+            "it": "Porta",
+            "sv": "Port",
+            "no": "Port",
+            "es": "Puerto",
+            "da": "Port",
+            "ru": "Порт",
+            "pl": "Port",
+            "ko": "포트"
           }
         }
       ]

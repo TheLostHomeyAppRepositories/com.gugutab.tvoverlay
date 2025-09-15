@@ -12,8 +12,7 @@ Perfect voor:
 •  Herinneringen (bijv. “Zet het vuilnis buiten”)
 •  Aangepaste berichten tijdens automatiseringen
 
-Om deze Homey-app te gebruiken, moet je de TVOverlay-client op je Android TV installeren:
-https://play.google.com/store/apps/details?id=com.tabdeveloper.tvoverlay&hl=nl
+Om deze Homey-app te gebruiken, moet je de TVOverlay-client op je Android TV installeren. Je kunt deze vinden in de Google Play Store of rechtstreeks downloaden van de TVOverlay-website.
 
 Flowkaarten
 TVOverlay integreert met Homey Flows via eenvoudige maar krachtige kaarten. Dit kun je ermee:

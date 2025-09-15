@@ -11,8 +11,7 @@ Parfait pour :
 •  Rappels (ex. « Sortez les poubelles »)
 •  Messages personnalisés lors des automatisations
 
-Pour utiliser cette application Homey, vous devez installer le client TVOverlay sur votre Android TV :
-https://play.google.com/store/apps/details?id=com.tabdeveloper.tvoverlay&hl=fr
+Pour utiliser cette application Homey, vous devez installer le client TVOverlay sur votre Android TV. Vous pouvez le trouver sur le Google Play Store ou le télécharger directement depuis le site web de TVOverlay.
 
 Cartes de flux
 TVOverlay s'intègre aux Flows Homey grâce à des cartes simples mais puissantes. Voici ce que vous pouvez faire :

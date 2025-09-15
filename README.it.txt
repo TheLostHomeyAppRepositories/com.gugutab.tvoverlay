@@ -11,8 +11,7 @@ Perfetto per:
 •  Promemoria (es. “Porta fuori la spazzatura”)
 •  Messaggi personalizzati durante le automazioni
 
-Per utilizzare questa app Homey, devi installare il client TVOverlay sulla tua Android TV:
-https://play.google.com/store/apps/details?id=com.tabdeveloper.tvoverlay&hl=it
+Per utilizzare questa app Homey, devi installare il client TVOverlay sulla tua Android TV. Puoi trovarlo sul Google Play Store o scaricarlo direttamente dal sito web di TVOverlay.
 
 Schede Flow
 TVOverlay si integra con i Flow di Homey tramite schede semplici ma potenti. Ecco cosa puoi fare:
