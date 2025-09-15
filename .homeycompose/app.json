@@ -9,10 +9,32 @@
     "local"
   ],
   "name": {
-    "en": "TvOverlay"
+    "en": "TvOverlay",
+    "nl": "TvOverlay",
+    "de": "TvOverlay",
+    "fr": "TvOverlay",
+    "it": "TvOverlay",
+    "sv": "TvOverlay",
+    "no": "TvOverlay",
+    "es": "TvOverlay",
+    "da": "TvOverlay",
+    "ru": "TvOverlay",
+    "pl": "TvOverlay",
+    "ko": "TvOverlay"
   },
   "description": {
-    "en": "Send notifications to your AndoridTV"
+    "en": "Send notifications to your AndoridTV",
+    "nl": "Stuur meldingen naar je AndoridTV",
+    "de": "Sende Benachrichtigungen an dein AndoridTV",
+    "fr": "Envoyez des notifications à votre AndoridTV",
+    "it": "Invia notifiche al tuo AndoridTV",
+    "sv": "Skicka aviseringar till din AndoridTV",
+    "no": "Send varsler til din AndoridTV",
+    "es": "Envía notificaciones a tu AndoridTV",
+    "da": "Send beskeder til din AndoridTV",
+    "ru": "Отправляйте уведомления на ваш AndoridTV",
+    "pl": "Wysyłaj powiadomienia na swój AndoridTV",
+    "ko": "AndoridTV로 알림을 보내세요"
   },
   "category": [
     "tools"

@@ -1,0 +1,10 @@
+{
+   "pair": {
+      "title": "Ny TvOverlay-enhet",
+      "subtitle": "",
+      "logindata": "Nettverksadresse",
+      "ipAddress": "IP-adresse",
+      "port": "Port",
+      "submit": "Lagre endringer"
+   }
+}

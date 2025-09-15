@@ -1,0 +1,10 @@
+{
+   "pair": {
+      "title": "새 TvOverlay 장치",
+      "subtitle": "",
+      "logindata": "네트워크 주소",
+      "ipAddress": "IP 주소",
+      "port": "포트",
+      "submit": "변경 사항 저장"
+   }
+}

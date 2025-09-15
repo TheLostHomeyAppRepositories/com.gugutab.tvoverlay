@@ -1,6 +1,17 @@
 {
   "name": {
-    "en": "TvOverlay"
+    "en": "TvOverlay",
+    "nl": "TvOverlay",
+    "de": "TvOverlay",
+    "fr": "TvOverlay",
+    "it": "TvOverlay",
+    "sv": "TvOverlay",
+    "no": "TvOverlay",
+    "es": "TvOverlay",
+    "da": "TvOverlay",
+    "ru": "TvOverlay",
+    "pl": "TvOverlay",
+    "ko": "TvOverlay"
   },
   "class": "other",
   "capabilities": [

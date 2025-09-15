@@ -4,11 +4,31 @@
       "id": "send_device_notification",
       "title": {
         "en": "Send notfication to AndroidTV",
-        "nl": "Verstuur notificatie naar AndroidTV"
+        "nl": "Verstuur notificatie naar AndroidTV",
+        "de": "Benachrichtigung an AndroidTV senden",
+        "fr": "Envoyer une notification à AndroidTV",
+        "it": "Invia notifica a AndroidTV",
+        "sv": "Skicka avisering till AndroidTV",
+        "no": "Send varsling til AndroidTV",
+        "es": "Enviar notificación a AndroidTV",
+        "da": "Send notifikation til AndroidTV",
+        "ru": "Отправить уведомление на AndroidTV",
+        "pl": "Wyślij powiadomienie do AndroidTV",
+        "ko": "AndroidTV에 알림 보내기"
       },
       "titleFormatted": {
         "en": "Send notfication to AndroidTV [[message]] [[title]] [[corner]] [[seconds]]",
-        "nl": "Verstuur notificatie naar AndroidTV [[message]] [[title]] [[corner]] [[seconds]]"
+        "nl": "Verstuur notificatie naar AndroidTV [[message]] [[title]] [[corner]] [[seconds]]",
+        "de": "Benachrichtigung an AndroidTV senden [[message]] [[title]] [[corner]] [[seconds]]",
+        "fr": "Envoyer une notification à AndroidTV [[message]] [[title]] [[corner]] [[seconds]]",
+        "it": "Invia notifica a AndroidTV [[message]] [[title]] [[corner]] [[seconds]]",
+        "sv": "Skicka avisering till AndroidTV [[message]] [[title]] [[corner]] [[seconds]]",
+        "no": "Send varsling til AndroidTV [[message]] [[title]] [[corner]] [[seconds]]",
+        "es": "Enviar notificación a AndroidTV [[message]] [[title]] [[corner]] [[seconds]]",
+        "da": "Send notifikation til AndroidTV [[message]] [[title]] [[corner]] [[seconds]]",
+        "ru": "Отправить уведомление на AndroidTV [[message]] [[title]] [[corner]] [[seconds]]",
+        "pl": "Wyślij powiadomienie do AndroidTV [[message]] [[title]] [[corner]] [[seconds]]",
+        "ko": "AndroidTV에 알림 보내기 [[message]] [[title]] [[corner]] [[seconds]]"
       },
       "args": [
         {

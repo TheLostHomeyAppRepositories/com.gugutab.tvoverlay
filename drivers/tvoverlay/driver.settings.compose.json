@@ -3,14 +3,36 @@
     "id": "ip",
     "type": "text",
     "label": {
-      "en": "IP address"
+      "en": "IP address",
+      "nl": "IP-adres",
+      "de": "IP-Adresse",
+      "fr": "Adresse IP",
+      "it": "Indirizzo IP",
+      "sv": "IP-adress",
+      "no": "IP-adresse",
+      "es": "Dirección IP",
+      "da": "IP-adresse",
+      "ru": "IP-адрес",
+      "pl": "Adres IP",
+      "ko": "IP 주소"
     }
   },
   {
     "id": "port",
     "type": "text",
     "label": {
-      "en": "Port"
+      "en": "Port",
+      "nl": "Poort",
+      "de": "Port",
+      "fr": "Port",
+      "it": "Porta",
+      "sv": "Port",
+      "no": "Port",
+      "es": "Puerto",
+      "da": "Port",
+      "ru": "Порт",
+      "pl": "Port",
+      "ko": "포트"
     }
   }
 ]
