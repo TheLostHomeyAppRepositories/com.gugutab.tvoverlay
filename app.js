@@ -27,7 +27,7 @@ module.exports = class TvOverlay extends Homey.App {
           null,
           args.corner,
           args.seconds
-        );
+        ).catch(this.error);
       }
       return Promise.resolve(true);
     });
@@ -56,7 +56,7 @@ module.exports = class TvOverlay extends Homey.App {
             null,
             args.corner,
             args.seconds
-          );
+          ).catch(this.error);
         }
       }
       return Promise.resolve(true);
@@ -97,7 +97,7 @@ module.exports = class TvOverlay extends Homey.App {
           null,
           args.corner,
           args.seconds
-        );
+        ).catch(this.error);
       }
       return Promise.resolve(true);
     });
@@ -126,7 +126,7 @@ module.exports = class TvOverlay extends Homey.App {
             args.largeIcon,
             args.corner,
             args.seconds
-          );
+          ).catch(this.error);
         }
       }
       return Promise.resolve(true);
@@ -167,7 +167,7 @@ module.exports = class TvOverlay extends Homey.App {
           args.largeIcon,
           args.corner,
           args.seconds
-        );
+        ).catch(this.error);
       }
       return Promise.resolve(true);
     });
@@ -177,7 +177,7 @@ module.exports = class TvOverlay extends Homey.App {
       if (typeof args.device.getData() !== 'undefined') {
         const settings = args.device.getSettings();
         this.homey.app.api.setSettings(settings.ip, settings.port);
-        return this.homey.app.api.setScreenOn();
+        return this.homey.app.api.setScreenOn().catch(this.error);
       }
       return Promise.resolve(true);
     });
@@ -191,7 +191,7 @@ module.exports = class TvOverlay extends Homey.App {
           args.imageDisplay,
           args.imageSmall,
           args.sourceDisplay,
-        );
+        ).catch(this.error);
       }
       return Promise.resolve(true);
     });

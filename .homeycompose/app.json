@@ -24,18 +24,18 @@
     "ko": "TvOverlay"
   },
   "description": {
-    "en": "Send notifications to your AndoridTV",
-    "nl": "Stuur meldingen naar je AndoridTV",
-    "de": "Sende Benachrichtigungen an dein AndoridTV",
-    "fr": "Envoyez des notifications à votre AndoridTV",
-    "it": "Invia notifiche al tuo AndoridTV",
-    "sv": "Skicka aviseringar till din AndoridTV",
-    "no": "Send varsler til din AndoridTV",
-    "es": "Envía notificaciones a tu AndoridTV",
-    "da": "Send beskeder til din AndoridTV",
-    "ru": "Отправляйте уведомления на ваш AndoridTV",
-    "pl": "Wysyłaj powiadomienia na swój AndoridTV",
-    "ko": "AndoridTV로 알림을 보내세요"
+    "en": "Send notifications to your AndroidTV",
+    "nl": "Stuur meldingen naar je AndroidTV",
+    "de": "Sende Benachrichtigungen an dein AndroidTV",
+    "fr": "Envoyez des notifications à votre AndroidTV",
+    "it": "Invia notifiche al tuo AndroidTV",
+    "sv": "Skicka aviseringar till din AndroidTV",
+    "no": "Send varsler til din AndroidTV",
+    "es": "Envía notificaciones a tu AndroidTV",
+    "da": "Send beskeder til din AndroidTV",
+    "ru": "Отправляйте уведомления на ваш AndroidTV",
+    "pl": "Wysyłaj powiadomienia na swój AndroidTV",
+    "ko": "AndroidTV로 알림을 보내세요"
   },
   "category": [
     "tools"
